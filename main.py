@@ -30,7 +30,9 @@ u[:, -1] = 0.0  # u = 0 at y = 1
 
 
 # Solve Poisson equation using second order finite difference method
+start_time = time.time()  # Start timer
 u = solveFD2_Poissons(nx, ny, dx, dy, f, size, u)
+end_time = time.time()  # End timer
 
 
 # Plot results
